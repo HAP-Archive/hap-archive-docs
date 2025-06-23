@@ -1,0 +1,14 @@
+{
+  "name": "02-js",
+  "version": "1.0.0",
+  "keywords": [],
+  "type": "module",
+  "description": "Directory for solved LeetCode problems using JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.0.2"
+  }
+}
