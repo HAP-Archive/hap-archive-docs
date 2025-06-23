@@ -11,6 +11,11 @@ def contains_duplicate(nums: list) -> bool:
 
     return False
 
+
+def contains_duplicate_v2(nums: list) -> bool:
+    return len(nums) != len(set(nums))
+
+
 @pytest.mark.parametrize(
     ("input", "expected"),
     (
@@ -22,6 +27,7 @@ def contains_duplicate(nums: list) -> bool:
 )
 def test_contains_duplicate(input: list, expected: bool) -> None:
     assert contains_duplicate(nums=input) == expected
+
 
 if __name__ == "__main__":
     test_contains_duplicate()
