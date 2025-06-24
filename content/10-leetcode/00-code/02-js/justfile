@@ -21,9 +21,9 @@ run-file file:
         exit 1; \
     fi
 
-    @if [ ! -f "{{file}}" ]; then \
+    @if [ ! -f "test/{{file}}" ]; then \
         echo "{{BG_RED}}ERROR:{{NORMAL}} The file '{{file}}' does not exist."; \
         exit 1; \
     fi
 
-    @npx jest -u ./test/{{file}} --verbose
+    @NODE_OPTIONS=--experimental-vm-modules npx jest "test/{{file}}" --config="{}" --verbose
