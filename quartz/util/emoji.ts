@@ -38,10 +38,22 @@ export async function loadEmoji(code: string) {
   }
 
   const name = emojimap.codePointToName[`U+${code.toUpperCase()}`]
-  if (!name) throw new Error(`codepoint ${code} not found in map`)
+  if (!name) {
+    console.warn(`codepoint ${code} not found in map, using fallback`)
+    const fallbackCode = "1f464" // 👤 bust in silhouette
+    const fallbackName = emojimap.codePointToName[`U+${fallbackCode.toUpperCase()}`]
+    if (fallbackName) {
+      const fallbackB64 = emojimap.nameToBase64[fallbackName]
+      if (fallbackB64) return fallbackB64
+    }
+    return ""
+  }
 
   const b64 = emojimap.nameToBase64[name]
-  if (!b64) throw new Error(`name ${name} not found in map`)
+  if (!b64) {
+    console.warn(`name ${name} not found in map, using fallback`)
+    return ""
+  }
 
   return b64
 }

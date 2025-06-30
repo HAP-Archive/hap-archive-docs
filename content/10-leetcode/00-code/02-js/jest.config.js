@@ -6,8 +6,8 @@
 const config = {
     testEnvironment: "node",
     testMatch: [
-        "src/**/*.test.js",
-        "src/**/*.spec.js"
+        "./test/**/*.test.js",
+        "./test/**/*.spec.js"
     ],
     clearMocks: true,
     collectCoverage: false,
@@ -15,7 +15,6 @@ const config = {
     maxWorkers: "50%",
     transform: {},
     moduleFileExtensions: ["js", "json", "ts"],
-    rootDir: "./src"
 };
 
 export default config;
