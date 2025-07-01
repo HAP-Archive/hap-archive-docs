@@ -1,8 +1,8 @@
 [project]
 name = "00-py"
 version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.13"
+description = "Directory for LeetCode solutions done using python with pytest for unit tests."
+requires-python = ">=3.12"
 dependencies = [
     "pytest>=8.4.1",
 ]

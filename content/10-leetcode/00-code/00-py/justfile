@@ -11,14 +11,25 @@ default:
 run-file file:
     @echo "{{BG_BLUE}}INFO:{{NORMAL}} Running unit tests for the following file: {{file}}"
 
-    @if [ -z "$(which pytest)" ]; then \
-        echo "{{BG_RED}}ERROR:{{NORMAL}} pytest is not installed. Please install pytest to run the tests."; \
-        exit 1; \
-    fi
-
     @if [ ! -f "{{file}}" ]; then \
         echo "{{BG_RED}}ERROR:{{NORMAL}} The file '{{file}}' does not exist."; \
         exit 1; \
     fi
 
-    @pytest -v -s {{file}}
+    @if [ -z "$(which uv)" ]; then \
+        echo "{{BG_RED}}ERROR:{{NORMAL}} uv is not installed. Please install uv, if you intend to use uv instead of pytest standalone."
+        exit 1; \
+    else \
+        @uv run pytest -v -s {{file}} \
+        exit 1; \
+    fi
+    
+
+    @if [ -z "$(which pytest)" ]; then \
+        echo "{{BG_RED}}ERROR:{{NORMAL}} pytest is not installed. Please install pytest to run the tests."; \
+        exit 1; \
+    else \
+        @pytest -v -s {{file}} \
+        exit 1; \
+    fi
+
