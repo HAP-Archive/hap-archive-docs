@@ -1,7 +1,7 @@
 import {describe, expect, test} from '@jest/globals';
 import containsDuplicate from "../src/lc_217_contains_duplicate";
 
-describe("Contains Duplicate Tests", () => {
+describe("Tests for Contains Duplicate", () => {
     test("Test Case: [1,2,3,1] => true", () => {
         expect(containsDuplicate([1,2,3,1])).toBe(true);
     });
