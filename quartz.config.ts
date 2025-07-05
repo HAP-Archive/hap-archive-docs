@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "https://hap-archive.github.io/hap-archive-docs/",
-    ignorePatterns: ["private", "templates", ".obsidian", "tmpl", "priv"],
+    ignorePatterns: ["private", "templates", ".obsidian", "tmpl", "priv", "node_modules"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

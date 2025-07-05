@@ -1,15 +1,20 @@
 ---
-title: <% tp.system.prompt("What is the Title of this Note?") %>
-date: <% tp.file.creation_date("dddd Do MMMM YYYY HH:mm:ss") %>
-modified_date: <% tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss") %>
-summary: <% tp.system.prompt("Provide a Summary of the Note (Optional)") %>
-uuid: 
-tags: 
+title: LCE - Contains Duplicate
+date: Sunday 22nd June 2025 17:52:48
+modified_date: Sunday 22nd June 2025 17:52:48
+summary: Following NeetCode 150, this is question 217 on LeetCode called "Contains Duplicate".
+uuid: 4d7b4fd1-4263-4fad-bcf0-259e44ddfd0e
+tags:
+  - Dev-Weekends
+  - Fellowship
+  - Document
+  - LeetCode
+  - LCE
 index_depth: 
 is_index?: false
 ---
 
-# LeetCode Problem <% tp.file.title %>
+# LCE - Contains Duplicate
 
 ## Summary
 
@@ -23,8 +28,8 @@ This section will go over a simple introduction/summary introducing the LeetCode
 
 This section goes over the specific problem that will be analyzed, including a direct link to the LeetCode problem, and any formal introduction of the task.
 
-- **LeetCode Link**: []()
-- **Problem Description**: 
+- **LeetCode Link**: [Contains Duplicate - LeetCode](https://leetcode.com/problems/contains-duplicate/description/)
+- **Problem Description**: Given an integer array `nums`, return `true` if any value appears **at least twice** in the array, and return `false` if every element is distinct.
 
 ### Key Points
 Provided below are the key points and deliverables for this document:
