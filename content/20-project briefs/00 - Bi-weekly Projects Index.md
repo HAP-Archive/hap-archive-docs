@@ -20,7 +20,6 @@ uuid: 10e26eff-0d19-48ba-b9af-8a2c2a154f7e
 - [ ] Neural Network (Scratch)
 - [ ] Multi-layer Perceptron
 - [ ] Optical Character Recognition (OCR)
-- [ ] Physics Engine
 - [ ] Agentic Book Recommendation System
 - [ ] P2P File Sharing App
 - [ ] Agentic OpenAI Clone
@@ -31,6 +30,9 @@ uuid: 10e26eff-0d19-48ba-b9af-8a2c2a154f7e
 ## Todo
 
 - [ ] Pomodoro Timer w/ Task Management
+- [ ] Physics Engine
+- [ ] Game Engine
+- [ ] Programming Language (Arkose Lang)
 
 
 ## Doing
