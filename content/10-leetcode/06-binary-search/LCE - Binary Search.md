@@ -2,10 +2,13 @@
 title: LCE - Binary Search
 date: Sunday 6th July 2025 02:04:19
 modified_date: Sunday 6th July 2025 02:04:19
-summary: Binary Search
+summary: Following NeetCode 150, this is question 704 on Leetcode called "Binary Search"
 uuid: d614c415-5b15-4660-9849-3e7da14d5690
 tags:
   - LeetCode
+  - Dev-Weekends
+  - Fellowship
+  - LCE
 index_depth: 
 is_index?: false
 ---
